@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tailwind.css">
+  </head>
+  <body>
+      <div class="flex h-screen">
+        <div class="w-1/4">
+          <!-- <h1>Aryan Stud</h1> -->
+          <div class="main">
+            <div class="button-container">
+                <div class="parent">
+                    <div class="button-row div1"><h4>Longitude and latitude</h4></div>
+                    <div class="button-row div2"><button id="toggleButton1" class="off-button button" >Off</button></div>
+                    <div class="button-row div3"><h4>Height Map</h4></div>
+                    <div class="button-row div4"><button id="toggleButton2" class="off-button button" >Off</button></div>
+                    <div class="button-row div5"><h4>Rotation Control</h4></div>
+                    <div class="button-row div6"><button id="toggleButton3" class="off-button button" >Off</button></div>
+                    <div class="button-row div7"><h4>Apollo Landers</h4></div>
+                    <div class="button-row div8"><button id="toggleButton4" class="off-button button" >Off</button></div>
+                    <div class="button-row div9"><h4>Seas and Oceans</h4></div>
+                    <div class="button-row div10"><button id="toggleButton5" class="off-button button" >Off</button></div>
+                    <div class="button-row div11"><h4>MoonQuake</h4></div>
+                    <div class="button-row div12"><button id="toggleButton6" class="off-button button" >Off</button></div>
+                    <div class="button-row div13"><button id="toggleButton7" class="off-button button" >Off</button></div>
+                    <div class="dropdown-container">
+                        <div class="dropdown">
+                          <label for="year">Year:</label>
+                          <select id="year" name="year" onchange="filterData()">
+                          </select>
+                        </div>
+                    
+                        <div class="dropdown">
+                          <label for="day">Day:</label>
+                          <select id="day" name="day" onchange="filterData()">
+                          </select>
+                        </div> 
+                      </div>
+
+                    </div>
+                </div>
+            </div>             
+          </div>
+        </div>
+        <div class="w-3/4" id="canvasContainer">
+          <canvas class="webgl"></canvas>
+        </div>
+      </div>  
+    <!-- <div id="app"></div> -->
+    <script src="three.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="/main.js"></script>
+    
+  </body>
+</html>
